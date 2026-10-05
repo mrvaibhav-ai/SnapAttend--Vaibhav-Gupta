@@ -1,0 +1,23 @@
+# utility libraries
+numpy
+pandas
+
+
+#Face recognition libraries
+scikit-learn
+dlib-bin
+
+#python -m pip install dlib-20.0.99-cp314-cp314-win_amd64.whl
+
+#git+https://github.com/ageitgey/face_recognition_models
+
+
+setuptools<70.0.0
+
+supabase
+bcrypt
+
+segno
+pillow
+
+streamlit
