@@ -1,9 +1,14 @@
 import streamlit as st
 
 
+# =========================================================
+# HOME PAGE BACKGROUND
+# =========================================================
+
 def style_background_home():
 
-    st.markdown("""
+    st.markdown(
+        """
         <style>
 
         /* =========================
@@ -73,7 +78,7 @@ def style_background_home():
         }
 
 
-                /* =========================
+        /* =========================
            HOME PAGE TEXT
            ========================= */
 
@@ -86,55 +91,99 @@ def style_background_home():
 
             color: #FFFFFF !important;
 
-            font-weight: 750 !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+
+            opacity: 1 !important;
+
+            font-weight: 800 !important;
 
             text-shadow:
-                0 2px 10px rgba(0, 0, 0, 0.30) !important;
-        } 
-
-
-        /* Portal titles */
-
-        .stApp h1,
-        .stApp h2 {
-
-            font-weight: 750 !important;
-
-            letter-spacing: -0.5px !important;
-
-            text-shadow:
-                0 2px 10px rgba(0, 0, 0, 0.25);
+                0 2px 10px rgba(0, 0, 0, 0.35) !important;
         }
 
 
         /* =========================
-           DASHBOARD BACKGROUND
+           STUDENT / TEACHER TITLES
            ========================= */
 
-        .dashboard-background {
+        .stApp h2,
+        .stApp h3 {
 
-            background:
-                radial-gradient(
-                    circle at 10% 10%,
-                    rgba(59, 130, 246, 0.10),
-                    transparent 30%
-                ),
-                linear-gradient(
-                    135deg,
-                    #F8FAFC 0%,
-                    #EEF2FF 50%,
-                    #F8FAFC 100%
-                );
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
+
+            opacity: 1 !important;
+
+            font-weight: 800 !important;
+
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.35) !important;
         }
 
 
-        </style>
-    """, unsafe_allow_html=True)
+        /* =========================
+           HOME PAGE NORMAL TEXT
+           ========================= */
 
+        .stApp [data-testid="stMarkdownContainer"] p,
+        .stApp [data-testid="stMarkdownContainer"] span {
+
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
+
+            opacity: 1 !important;
+        }
+
+
+        /* =========================
+           HOME PAGE HEADINGS
+           ========================= */
+
+        .stApp h1,
+        .stApp h2 {
+
+            font-weight: 800 !important;
+
+            letter-spacing: -0.5px !important;
+
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
+
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.30) !important;
+        }
+
+
+        /* =========================
+           HOME BUTTON TEXT
+           ========================= */
+
+        .stApp button {
+
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
+
+            opacity: 1 !important;
+        }
+
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+# =========================================================
+# DASHBOARD BACKGROUND
+# =========================================================
 
 def style_background_dashboard():
 
-    st.markdown("""
+    st.markdown(
+        """
         <style>
 
         /* =========================
@@ -159,13 +208,69 @@ def style_background_dashboard():
             min-height: 100vh;
         }
 
-        </style>
-    """, unsafe_allow_html=True)
 
+        /* =========================
+           DASHBOARD HEADINGS
+           ========================= */
+
+        .stApp h1,
+        .stApp h2,
+        .stApp h3,
+        .stApp h4,
+        .stApp h5,
+        .stApp h6 {
+
+            color: #1E293B !important;
+
+            -webkit-text-fill-color: #1E293B !important;
+
+            opacity: 1 !important;
+
+            text-shadow: none !important;
+        }
+
+
+        /* =========================
+           DASHBOARD TEXT
+           ========================= */
+
+        .stApp p,
+        .stApp label {
+
+            color: #334155 !important;
+
+            -webkit-text-fill-color: #334155 !important;
+
+            opacity: 1 !important;
+        }
+
+
+        /* =========================
+           DASHBOARD INPUTS
+           ========================= */
+
+        .stApp input,
+        .stApp textarea {
+
+            color: #1E293B !important;
+
+            background-color: #FFFFFF !important;
+        }
+
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+# =========================================================
+# BASE LAYOUT
+# =========================================================
 
 def style_base_layout():
 
-    st.markdown("""
+    st.markdown(
+        """
         <style>
 
         /* =========================
@@ -193,7 +298,9 @@ def style_base_layout():
            ========================= */
 
         .block-container {
+
             padding-top: 1.5rem !important;
+
             padding-bottom: 2rem !important;
         }
 
@@ -212,6 +319,7 @@ def style_base_layout():
         span,
         label,
         div {
+
             font-family: 'Outfit', sans-serif;
         }
 
@@ -221,20 +329,31 @@ def style_base_layout():
            ========================= */
 
         h1 {
+
             font-size: 3.3rem !important;
+
             font-weight: 800 !important;
+
             line-height: 1.1 !important;
+
             letter-spacing: -1px !important;
         }
 
+
         h2 {
+
             font-size: 2.2rem !important;
+
             font-weight: 750 !important;
+
             line-height: 1.1 !important;
         }
 
+
         h3 {
+
             font-size: 1.5rem !important;
+
             font-weight: 700 !important;
         }
 
@@ -244,7 +363,9 @@ def style_base_layout():
            ========================= */
 
         p {
+
             font-weight: 450;
+
             line-height: 1.5;
         }
 
@@ -264,7 +385,9 @@ def style_base_layout():
                     #4F46E5
                 ) !important;
 
-            color: white !important;
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
 
             padding: 10px 22px !important;
 
@@ -298,7 +421,9 @@ def style_base_layout():
                     #7C3AED
                 ) !important;
 
-            color: white !important;
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
 
             padding: 10px 22px !important;
 
@@ -321,7 +446,9 @@ def style_base_layout():
 
             background: #111827 !important;
 
-            color: white !important;
+            color: #FFFFFF !important;
+
+            -webkit-text-fill-color: #FFFFFF !important;
 
             padding: 10px 22px !important;
 
@@ -367,4 +494,6 @@ def style_base_layout():
         }
 
         </style>
-    """, unsafe_allow_html=True)
+        """,
+        unsafe_allow_html=True
+    )

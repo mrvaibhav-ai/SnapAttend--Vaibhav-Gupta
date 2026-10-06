@@ -42,7 +42,7 @@ def footer_dashboard():
                 font-size:15px;
                 font-weight:600;
             ">
-                Created with <span style="color:#ff4b6e;">♥</span> by
+                Created with <span style="color:#ff4b6e;">❤️</span> by
                 <strong style="color:#4f46e5;">Vaibhav Gupta</strong>
             </div>
         </div>
